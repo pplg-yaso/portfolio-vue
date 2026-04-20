@@ -1,17 +1,26 @@
 <template>
   <section class="auth">
     <div class="container">
-      <div class="auth-card">
-        <h1>Sign In</h1>
-        <p class="subtitle">Masuk ke akun kamu</p>
 
-        <form @submit.prevent="handleLogin">
+      <div class="auth-card">
+        <h1>Sign Up</h1>
+        <p class="subtitle">Buat akun baru</p>
+
+        <form @submit.prevent="handleRegister">
+          <input
+            type="text"
+            v-model="form.name"
+            placeholder="Nama"
+            required
+          />
+
           <input
             type="email"
             v-model="form.email"
             placeholder="Email"
             required
           />
+
           <input
             type="password"
             v-model="form.password"
@@ -19,19 +28,20 @@
             required
           />
 
-          <button type="submit">Masuk</button>
+          <button type="submit">Daftar</button>
         </form>
-        
-        <button class="google-btn" @click="loginWithGoogle">
-          🔵 Masuk dengan Google
-        </button>
 
         <p class="footer">
-          Belum punya akun?
-          <span @click="goToRegister">Register</span>
+          Sudah punya akun?
+          <span @click="goLogin">Login</span>
         </p>
 
+        <button class="google-btn" @click="loginWithGoogle">
+          🔵 Daftar dengan Google
+        </button>
+
       </div>
+
     </div>
   </section>
 </template>
@@ -43,28 +53,23 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 
 const form = reactive({
+  name: "",
   email: "",
   password: ""
 });
 
-const handleLogin = () => {
-  // simulasi login
-  if (form.email === "admin@gmail.com" && form.password === "123456") {
-    alert("Login berhasil!");
-    router.push("/"); // redirect ke home
-  } else {
-    alert("Email atau password salah!");
-  }
+const handleRegister = () => {
+  alert("Register berhasil (dummy)");
+  router.push("/login");
 };
 
-const goToRegister = () => {
-  router.push("/register");
+const goLogin = () => {
+  router.push("/login");
 };
 
 const loginWithGoogle = () => {
   alert("Google Register (nanti pakai Firebase)");
 };
-
 </script>
 
 <style scoped>
@@ -78,7 +83,7 @@ const loginWithGoogle = () => {
 
 .container {
   width: 100%;
-  max-width: 400px;
+  max-width: 420px;
 }
 
 .auth-card {
@@ -89,9 +94,8 @@ const loginWithGoogle = () => {
   text-align: center;
 }
 
-.auth-card h1 {
+h1 {
   color: #1e3a8a;
-  margin-bottom: 10px;
 }
 
 .subtitle {
@@ -99,15 +103,15 @@ const loginWithGoogle = () => {
   margin-bottom: 20px;
 }
 
-.auth-card input {
+input {
   width: 100%;
   padding: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
   border-radius: 8px;
   border: 1px solid #ddd;
 }
 
-.auth-card button {
+button {
   width: 100%;
   padding: 10px;
   border: none;
@@ -117,24 +121,19 @@ const loginWithGoogle = () => {
   cursor: pointer;
 }
 
-.auth-card button:hover {
-  background: #1e40af;
-}
-
-.footer {
-  margin-top: 15px;
-  font-size: 14px;
-}
-
-.footer span {
-  color: #2563eb;
-  cursor: pointer;
-}
-
 .google-btn {
   margin-top: 10px;
   background: white;
   color: black;
   border: 1px solid #ddd;
+}
+
+.footer {
+  margin-top: 15px;
+}
+
+.footer span {
+  color: #2563eb;
+  cursor: pointer;
 }
 </style>

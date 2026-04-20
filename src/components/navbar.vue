@@ -13,7 +13,7 @@
         <router-link to="/" class="nav-links">Home</router-link>
         <router-link to="/about" class="nav-links">about</router-link>
         <router-link to="/services" class="nav-links">services</router-link>
-        <router-link to="/contant" class="nav-links">contant</router-link>
+        <router-link to="/contact" class="nav-links">contact</router-link>
       </ul>
 
       <!-- Button -->

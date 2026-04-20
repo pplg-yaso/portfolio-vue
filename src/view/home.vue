@@ -1,6 +1,6 @@
 <template>
 <div class="main-content">
-<h2>Selamat Datang di FRL</h2>
+<h2>Selamat Datang di Hikikomori</h2>
 <p>Kami memberikan solusi digital terbaik untuk bisnis Anda.</p>
 </div>
 </template>
