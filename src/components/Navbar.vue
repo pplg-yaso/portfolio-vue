@@ -1,36 +1,31 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black starwars-navbar">
+  <nav class="navbar navbar-expand-lg navbar-dark starwars-navbar fixed-top">
     <div class="container-fluid">
       <!-- Logo -->
       <a class="navbar-brand d-flex align-items-center" href="#">
-        <img
-          src="https://lumiere-a.akamaihd.net/v1/images/sw_logo_stacked_2x-52b4f6d33087_7ef430af.png?region=0,0,586,254"
-          alt="Logo"
-          width="120"
-          height="100"
-          class="me-2 justify-center"
-        />
-        <h1 class="navbar-brand starwars-title">Star Wars</h1>
+ 
+        <h1 class="navbar-brand starwars-title">STAR WARS</h1>
       </a>
 
-      <!-- Brand Title -->
-
       <!-- Navbar links -->
-      <div class="collapse navbar-collapse">
+      <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item" v-for="(item, index) in menuItems" :key="index">
-            <router-link class="nav-link starwars-link" :to="item.link">{{ item.name }}</router-link>
+            <router-link class="nav-link starwars-link" :to="item.link">
+              {{ item.name }}
+            </router-link>
           </li>
         </ul>
 
         <!-- Search -->
-        <form class="d-flex ms-3" role="search">
+        <form class="d-flex ms-4" role="search">
           <input
-            class="form-control me-2"
+            class="form-control me-2 starwars-search"
             type="search"
-            placeholder="Search"
+            placeholder="Search the galaxy..."
+            aria-label="Search"
           />
-          <button class="btn btn-outline-light" type="submit">Search</button>
+          <button class="btn btn-outline-warning" type="submit">Search</button>
         </form>
       </div>
     </div>
@@ -44,10 +39,10 @@ export default {
     return {
       menuItems: [
         { name: "Home", link: "/" },
-        { name: "Movies", link: "/about" },
-        { name: "Services", link: "/services" },
-        { name: "Portfolio", link: "/portfolio" },
-        { name: "Contact", link: "/contact" },
+        { name: "Movies", link: "/About" },
+        { name: "Shop", link: "/series" },
+        { name: "Characters", link: "/characters" },
+        { name: "Galaxy", link: "/galaxy" },
       ],
     };
   },
@@ -55,42 +50,72 @@ export default {
 </script>
 
 <style scoped>
-/* Navbar dasar */
+/* Import Font Star Wars (tambahkan di index.html atau main.js) */
 .starwars-navbar {
-  background-color: black !important;
-  font-family: "Arial", sans-serif;
+  background-color: #0a0a0a !important;
+  border-bottom: 2px solid #facc15;
+  box-shadow: 0 8px 25px rgba(250, 204, 21, 0.25);
+  padding: 0.8rem 0;
+  transition: all 0.4s ease;
 }
 
-/* Teks brand */
+/* Font Star Wars epik */
 .starwars-title {
-  color: white;
-  font-weight: bold;
-  font-size: 1.5rem;
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  margin-left: 0.5rem;
+  font-family: 'Star Wars', 'Orbitron', sans-serif;
+  color: #facc15 !important;
+  font-size: 2.1rem;
+  font-weight: 900;
+  letter-spacing: 6px;
+  text-transform: uppercase;
+  text-shadow: 
+    0 0 10px #facc15,
+    0 0 20px #facc15,
+    0 0 30px #eab308;
+  margin: 0;
 }
 
 /* Links */
 .starwars-link {
-  color: rgb(255, 255, 255) !important;
-  font-weight: bold;
+  color: #e5e5e5 !important;
+  font-weight: 600;
+  font-size: 1.05rem;
+  padding: 0.6rem 1.2rem !important;
   transition: all 0.3s ease;
+  position: relative;
 }
 
-/* Hover efek glowing Star Wars */
 .starwars-link:hover {
-  text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 20px #ffffff;
-  transform: scale(1.1);
+  color: #facc15 !important;
+  text-shadow: 0 0 12px #facc15;
+  transform: translateY(-2px);
 }
 
-/* Logo animasi spin */
-.logo-spin {
-  animation: spin 5s linear infinite;
-  border: 2px solid yellow; /* opsional, biar lebih sci-fi */
+/* Search input style */
+.starwars-search {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #facc15;
+  color: white;
+  font-size: 1rem;
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+.starwars-search::placeholder {
+  color: #aaa;
+}
+
+.starwars-search:focus {
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.3);
+  color: white;
+}
+
+/* Efek saat scroll (shadow lebih kuat) */
+.starwars-navbar.scrolled {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  background-color: rgba(10, 10, 10, 0.98) !important;
+  padding: 0.6rem 0;
+}
+.navbar-brand {
+  display: flex;
+  padding: 10px 15px;
 }
 </style>
