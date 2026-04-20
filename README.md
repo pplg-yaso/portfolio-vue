@@ -11,7 +11,7 @@ Menampilkan profile, project, dan skill saya.»
 
 #:🌐 Live Demo
 
-«🔗 https://portfolio-irgy.vercel.app/»
+«🔗 https://portfolio-irgy.vercel.app
 
 ---
 
