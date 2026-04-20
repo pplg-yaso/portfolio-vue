@@ -44,30 +44,7 @@
       </div>
     </section>
 
-    <!-- PRESTASI -->
-    <section class="bg-light py-5 text-center">
-      <div class="container">
-        <h2 class="mb-4">Prestasi Klub</h2>
-        <div class="row">
 
-          <div class="col-md-4">
-            <h2 class="fw-bold text-danger">27</h2>
-            <p>La Liga Titles</p>
-          </div>
-
-          <div class="col-md-4">
-            <h2 class="fw-bold text-danger">5</h2>
-            <p>Champions League</p>
-          </div>
-
-          <div class="col-md-4">
-            <h2 class="fw-bold text-danger">31</h2>
-            <p>Copa del Rey</p>
-          </div>
-
-        </div>
-      </div>
-    </section>
 
     <!-- PEMAIN TERKENAL -->
 <section class="py-5">
@@ -109,6 +86,31 @@
     </div>
   </div>
 </section>
+
+ <!-- PRESTASI -->
+    <section class="bg-light py-5 text-center">
+      <div class="container">
+        <h2 class="mb-4">Prestasi Klub</h2>
+        <div class="row">
+
+          <div class="col-md-4">
+            <h2 class="fw-bold text-danger">27</h2>
+            <p>La Liga Titles</p>
+          </div>
+
+          <div class="col-md-4">
+            <h2 class="fw-bold text-danger">5</h2>
+            <p>Champions League</p>
+          </div>
+
+          <div class="col-md-4">
+            <h2 class="fw-bold text-danger">31</h2>
+            <p>Copa del Rey</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
 
 
   </div>

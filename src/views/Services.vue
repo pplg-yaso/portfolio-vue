@@ -4,6 +4,12 @@
 
       <h2 class="text-left py-5 mb-1">Official Merchandise</h2>
 
+     <section class="shop-hero">
+  <div class="hero-content">
+    <h1>KITS</h1>
+    <button class="shop-btn">SHOP NOW →</button>
+  </div>
+</section>
 
       <!-- Scroll Wrapper -->
       <div class="merch-wrapper" ref="scrollContainer">
@@ -46,6 +52,7 @@
 
   </div>
 </div>
+
 
     </div>
 <!-- SECTION JERSEY -->
@@ -291,6 +298,75 @@ export default {
 
 
 <style scoped>
+.shop-hero {
+  height: 90vh;
+  background: url('https://store.fcbarcelona.com/cdn/shop/files/Main-Banner-Equipaciones-d_1_9219ca04-2b90-4ce7-ac4a-0de0d65a9917.jpg?v=1774613136&width=3000') center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.shop-hero {
+  justify-content: center;
+}
+
+.shop-hero {
+  margin-bottom: 60px;
+}
+
+.shop-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.7) 20%,
+    rgba(0,0,0,0.3) 50%,
+    transparent
+  );
+}
+
+/* CONTENT DIPINDAH KE KIRI */
+.overlay {
+  position: relative;
+  color: white;
+
+  /* CENTER FIX */
+  width: 100%;
+  text-align: center;
+
+  /* HAPUS YANG INI */
+  padding-left: 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* JUDUL */
+.overlay h1 {
+  font-size: 100px;
+  font-weight: 900;
+  letter-spacing: 6px;
+  margin-bottom: 20px;
+}
+
+/* BUTTON */
+.shop-btn {
+  padding: 14px 35px;
+  background: #f4c430;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.shop-btn:hover {
+  background: #ffd700;
+  transform: translateY(-3px);
+}
+
 .merch-section {
   background: linear-gradient(to right, #0f1333, #111433);
   color: white;
