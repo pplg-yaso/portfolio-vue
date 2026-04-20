@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 
 <template>
 <nav class="navbar">
-<h1>profile adi</h1>
+<h1>nguseup</h1>
 <ul>
 <li><router-link to="/">Home</router-link></li>
 <li><router-link to="/about">About</router-link></li>
@@ -29,6 +29,8 @@ padding: 16px;
 background: #1f2937;
 color: white;
 position: sticky;
+ top: 0;           
+  z-index: 1000; 
 }
 
 ul {

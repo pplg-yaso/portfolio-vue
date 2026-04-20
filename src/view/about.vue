@@ -10,7 +10,7 @@
     <div class="row align-items-center">
       <!-- Gambar About -->
       <div class="col-md-6 mb-4">
-        <img src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=80" 
+        <img src="https://img.freepik.com/foto-premium/hobi-memancing-dan-akhir-pekan-musim-panas-pria-berjanggut-pemancing-dengan-joran-dan-jaring-pria-menarik-joran_265223-170237.jpg?semt=ais_hybrid&w=740&q=80" 
              alt="Tentang Kami" 
              class="img-fluid rounded shadow">
       </div>

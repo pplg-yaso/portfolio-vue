@@ -35,10 +35,10 @@ export default {
   data() {
     return {
       products: [
-        { id: 1, name: "Joran Pancing", price: 250000, img: "https://images.unsplash.com/photo-1612277793132-1ad7b4c3cda6?auto=format&fit=crop&w=500&q=80" },
-        { id: 2, name: "Reel Pancing", price: 300000, img: "https://images.unsplash.com/photo-1591522813088-6b4e6f22aa40?auto=format&fit=crop&w=500&q=80" },
-        { id: 3, name: "Umpan Pancing", price: 50000, img: "https://images.unsplash.com/photo-1621661611258-93c5d1d7653f?auto=format&fit=crop&w=500&q=80" },
-        { id: 4, name: "Tas Pancing", price: 150000, img: "https://images.unsplash.com/photo-1587825140708-c92b01f3e39b?auto=format&fit=crop&w=500&q=80" },
+        { id: 1, name: "Joran Pancing", price: 250000, img: "https://down-id.img.susercontent.com/file/3c2dab762344468530828b8e63c63ac1" },
+        { id: 2, name: "Reel Pancing", price: 300000, img: "https://down-id.img.susercontent.com/file/id-11134207-7r98u-lp29bbkrysmr83" },
+        { id: 3, name: "Umpan Pancing", price: 50000, img: "https://img.lazcdn.com/g/p/911c3c8b16eaacdc9f04945a523f4ed3.jpg_720x720q80.jpg" },
+        { id: 4, name: "Tas Pancing", price: 150000, img: "https://www.megah.co.id/cdn/shop/products/TA054copy.jpg?v=1638761950" },
       ]
     }
   },

@@ -31,13 +31,13 @@ export default {
           id: 1,
           title: "Joran Terbaik 2026",
           description: "Joran kualitas tinggi yang cocok untuk pemancing pemula maupun profesional.",
-          img: "https://images.unsplash.com/photo-1612277793132-1ad7b4c3cda6?auto=format&fit=crop&w=500&q=80"
+          img: "https://filebroker-cdn.lazada.co.id/kf/Sa1c47e50fb264d909176d7273bd5f522Y.jpg"
         },
         {
           id: 2,
           title: "Reel Modern",
           description: "Reel anti karat dengan desain modern dan nyaman digunakan.",
-          img: "https://images.unsplash.com/photo-1591522813088-6b4e6f22aa40?auto=format&fit=crop&w=500&q=80"
+          img: "https://down-id.img.susercontent.com/file/id-11134207-7ras8-m0fc9hnjtibw7e"
         },
         {
           id: 3,
@@ -49,7 +49,7 @@ export default {
           id: 4,
           title: "Event Memancing",
           description: "Hasil foto kegiatan komunitas memancing yang kami sponsori.",
-          img: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=500&q=80"
+          img: "https://cdn.antaranews.com/cache/1200x800/2019/06/30/mancing-mania.jpg"
         },
         {
           id: 5,
