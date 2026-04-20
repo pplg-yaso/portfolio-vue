@@ -1,5 +1,61 @@
-# Vue 3 + Vite
+# 🚀 Portfolio Vue 3 - Irgy Fitrah
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+---
 
-Learn more about IDE Support for Vue in the [Vue Docs Scaling up Guide](https://vuejs.org/guide/scaling-up/tooling.html#ide-support).
+# 📌 About Project
+
+«Website portfolio pribadi yang dibuat menggunakan Vue 3 + Vite
+Menampilkan profile, project, dan skill saya.»
+
+---
+
+#:🌐 Live Demo
+
+«🔗 https://portfolio-irgy.vercel.app/»
+
+---
+
+# 🛠️ Tech Stack
+
+«- ⚡ Vue 3
+- ⚡ Vite
+- 🎨 CSS / Bootstrap
+- 🚀 Vercel»
+
+---
+
+# 📦 Features
+
+«- 🏠 Home Page
+- 👤 Profile Page
+- 📂 Portfolio Page
+- 🧭 SPA Navigation
+- ✨ UI Interaktif»
+
+---
+
+# 📥 Installation
+
+«Jalankan perintah berikut:»
+
+git clone https://github.com/pplg-yaso/portfolio-vue.git
+cd portfolio-vue
+npm install
+npm run dev
+
+---
+
+# 🚀 Deployment
+
+«Project ini di-deploy menggunakan Vercel»
+
+---
+
+# 👤 Author
+
+«Irgy Fitrah
+GitHub: https://github.com/pplg-yaso»
+
+---
+
+# ✨ Dibuat dengan Vue 3 + Vite
