@@ -1,6 +1,6 @@
 <template>
   <nav class="navbar">
-    <!-- Kiri -->
+
     <div class="nav-left">
       <img 
         src="https://upload.wikimedia.org/wikipedia/en/5/56/Real_Madrid_CF.svg" 
@@ -10,16 +10,14 @@
       <div class="badge">15</div>
     </div>
 
-    <!-- Tengah -->
-    <ul class="nav-menu">
-      <li><a href="#">home</a></li>
-      <li><a href="#">about</a></li>
-      <li><a href="#"></a></li>
-      <li><a href="#">Tour</a></li>
-      <li><a href="#">Shop</a></li>
-      <li><a href="#">RM Play</a></li>
-    </ul>
 
+   <ul class="nav-menu">
+  <li><router-link to="/home">Home</router-link></li>
+  <li><router-link to="/about">About</router-link></li>
+  <li><router-link to="/tour">Tropy</router-link></li>
+  <li><router-link to="/shop">Shop</router-link></li>
+  <li><router-link to="/play">RM Play</router-link></li>
+</ul>
     <!-- Kanan -->
     <div class="nav-right">
       <span class="sponsor">Emirates</span>

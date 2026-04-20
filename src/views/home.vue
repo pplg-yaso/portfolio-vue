@@ -6,27 +6,9 @@
       <div class="hero-content">
         <h2>Hala Madrid</h2>
         <p>Klub sepak bola terbesar di dunia dengan sejarah dan prestasi luar biasa</p>
-        <button @click="scrollToAbout">Explore Club</button>
       </div>
     </section>
 
-    <!-- About -->
-    <section class="section" id="about">
-      <h3>Tentang Klub</h3>
-      <p>
-      Real Madrid Club de Fútbol adalah klub sepak bola profesional asal Madrid, Spanyol yang didirikan pada 6 Maret 1902. Klub ini dikenal sebagai salah satu tim terbaik dan tersukses di dunia.
-
-Real Madrid memiliki warna kebanggaan putih, sehingga dijuluki Los Blancos. Klub ini bermarkas di stadion Santiago Bernabéu, yang menjadi salah satu stadion terkenal di dunia.
-
-Real Madrid terkenal karena prestasinya yang luar biasa, terutama di kompetisi Eropa. Mereka menjadi klub dengan gelar Liga Champions UEFA terbanyak dalam sejarah. Selain itu, Real Madrid juga banyak memenangkan gelar Liga Spanyol (La Liga) dan piala lainnya.
-
-Klub ini memiliki banyak pemain hebat sepanjang sejarah, seperti Cristiano Ronaldo, Zinedine Zidane, Karim Benzema, dan Iker Casillas.
-
-Real Madrid dikenal dengan semangat juang tinggi dan motto kebanggaan mereka, yaitu “Hala Madrid.” ⚽🤍
-      </p>
-    </section>
-
-    <!-- Trophy Image -->
     <section class="section trophy-section">
       <h3>Trophy Champions League</h3>
       <img class="trophy-img" 
@@ -184,7 +166,7 @@ const scrollToAbout = () => {
 
 /* Trophy Image */
 .trophy-img {
-  width: 250px;
+  width: 500px;
   margin-top: 20px;
   transition: 0.3s;
 }

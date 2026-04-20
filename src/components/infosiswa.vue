@@ -1,4 +1,4 @@
-<script setup>
+<!-- <script setup>
 import { ref } from 'vue'
 
 defineProps({
@@ -24,4 +24,4 @@ const count = ref(0)
 </template>
 
 <style src="./infoSiswa.css"scoped ></style>
-
+ -->
