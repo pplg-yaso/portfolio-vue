@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <footer class="footer">
+  <footer class="Footer">
     <div class="footer-content">
       <p class="copyright">© 2026 AlphaBeta. All rights reserved.</p>
       <div class="footer-links">
