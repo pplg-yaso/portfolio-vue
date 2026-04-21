@@ -1,5 +1,5 @@
 <template>
-  <navbar />
+  <Navbar />
   <main class="pt-5 mt-4">
     <router-view />
   </main>
@@ -7,7 +7,7 @@
 </template>
 
 <script setup>
-import navbar from './components/navbar.vue'
+import Navbar from './components/Navbar.vue'
 import Footer from './components/Footer.vue'
 </script>
 
