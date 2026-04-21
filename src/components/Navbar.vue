@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <nav class="navbar">
+  <nav class="Navbar">
     <div class="wrapper">
       <div class="name">
         <h1 class="firstname">Alpha</h1>
@@ -19,13 +19,13 @@
 </template>
 
 <style scoped>
-.navbar, .wrapper, .name, h1, ul, li {
+.Navbar, .wrapper, .name, h1, ul, li {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-.navbar {
+.Navbar {
   width: 100%;
   margin: 0;
   padding: 0;
