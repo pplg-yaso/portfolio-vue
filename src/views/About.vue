@@ -13,8 +13,7 @@
         <h1>Tentang Saya</h1>
 
         <p class="description">
-          Saya adalah seorang yang memiliki minat dalam dunia teknologi,
-          khususnya di bidang desain dan pengembangan web.
+          Saya adalah seorang yang memiliki minat pada bagian Frontend .
         </p>
 
         <p class="description">
@@ -24,10 +23,10 @@
 
         <!-- DATA DIRI -->
         <div class="info">
-          <div><strong>Nama:</strong> [Isi Nama Kamu]</div>
-          <div><strong>Umur:</strong> [Isi Umur]</div>
-          <div><strong>Alamat:</strong> [Isi Alamat]</div>
-          <div><strong>Email:</strong> [Isi Email]</div>
+          <div><strong>Nama:</strong> Muhamad Zaina Muktafabillah</div>
+          <div><strong>Umur:</strong> 16</div>
+          <div><strong>Hobi:</strong> Menggambar, Membuat content, Bersepedah</div>
+          <div><strong>Cita-cita:</strong> Membuat animasi sendiri</div>
         </div>
 
       </div>

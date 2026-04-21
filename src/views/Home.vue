@@ -13,11 +13,10 @@
       <!-- TEKS KANAN -->
       <div class="home-text">
         <p class="subtitle">HALO, SAYA</p>
-        <h1>Hafidz Humaidi Pratama Busroni</h1>
+        <h1>Muhamad Zaina Muktafabillah</h1>
         <h3>UI/UX Designer & Web Developer</h3>
         <p>
-          Saya membantu bisnis dan individu mengubah ide menjadi solusi digital
-          yang menarik dan efektif.
+         Saya suka menggambar dan membuat content.
         </p>
       </div>
 

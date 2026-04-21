@@ -15,7 +15,7 @@
       <!-- SOCIAL -->
       <div class="socials">
 
-        <a href="https://wa.me/628xxxxxxxxxx" target="_blank" class="card">
+        <a href="https://wa.me/6283172701572" target="_blank" class="card">
           <h3>WhatsApp</h3>
           <p>Chat langsung dengan saya</p>
         </a>
@@ -25,12 +25,12 @@
           <p>Lihat profil saya</p>
         </a>
 
-        <a href="https://github.com/username" target="_blank" class="card">
+        <a href="https://github.com/zee1140" target="_blank" class="card">
           <h3>GitHub</h3>
           <p>Lihat project saya</p>
         </a>
 
-        <a href="mailto:emailkamu@gmail.com" class="card">
+        <a href="mailto:muhamdzainamb@gmail.com" class="card">
           <h3>Email</h3>
           <p>Kirim email ke saya</p>
         </a>
