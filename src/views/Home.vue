@@ -1,12 +1,10 @@
 <template>
   <div class="home">
-
     <section class="header">
       <h1>🎬 Movie List</h1>
       <p>Temukan film favoritmu hari ini</p>
     </section>
 
-  
     <section class="movie-section">
       <div class="movie-grid">
         <div
@@ -24,8 +22,7 @@
       </div>
     </section>
 
-   
-    <div v-if="selectedMovie" class="modal" @click.self="selectedMovie = null">//directive Vue untuk rendering kondisional.
+    <div v-if="selectedMovie" class="modal" @click.self="selectedMovie = null">
       <div class="modal-content">
         <h2>{{ selectedMovie.title }}</h2>
         <p><strong>Genre:</strong> {{ selectedMovie.genre }}</p>
@@ -43,7 +40,6 @@ import { ref } from "vue";
 const selectedMovie = ref(null);
 
 const movies = ref([
-
   { id: 1, title: "Inception", genre: "Sci-Fi", rating: 8.8, poster: "https://image.tmdb.org/t/p/w500/9gk7adHYeDvHkCSEqAvQNLV5Uge.jpg", desc: "Masuk ke dunia mimpi untuk mencuri rahasia." },
   { id: 2, title: "Interstellar", genre: "Adventure", rating: 8.6, poster: "https://image.tmdb.org/t/p/w500/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg", desc: "Perjalanan lintas galaksi menyelamatkan manusia." },
   { id: 3, title: "Avengers: Endgame", genre: "Action", rating: 8.4, poster: "https://image.tmdb.org/t/p/w500/ulzhLuWrPK07P1YkdWQLZnQh1JL.jpg", desc: "Pertempuran terakhir melawan Thanos." },
@@ -54,7 +50,6 @@ const movies = ref([
   { id: 8, title: "The Matrix", genre: "Sci-Fi", rating: 8.7, poster: "https://image.tmdb.org/t/p/w500/f89U3ADr1oiB1s9GkdPOEpXUk5H.jpg", desc: "Dunia hanyalah simulasi." },
   { id: 9, title: "Gladiator", genre: "History", rating: 8.5, poster: "https://image.tmdb.org/t/p/w500/ty8TGRuvJLPUmAR1H1nRIsgwvim.jpg", desc: "Jenderal Romawi jadi gladiator." },
   { id: 10, title: "Spider-Man: No Way Home", genre: "Action", rating: 8.3, poster: "https://image.tmdb.org/t/p/w500/1g0dhYtq4irTY1GPXvft6k4YLjm.jpg", desc: "Multiverse Spider-Man terbuka." },
-
   { id: 11, title: "Titanic", genre: "Romance", rating: 7.9, poster: "https://image.tmdb.org/t/p/w500/9xjZS2rlVxm8SFx8kPC3aIGCOYQ.jpg", desc: "Cinta tragis di kapal legendaris." },
   { id: 12, title: "Avatar", genre: "Fantasy", rating: 7.8, poster: "https://image.tmdb.org/t/p/w500/jRXYjXNq0Cs2TcJjLkki24MLp7u.jpg", desc: "Petualangan di planet Pandora." },
   { id: 13, title: "The Lord of the Rings", genre: "Fantasy", rating: 8.9, poster: "https://image.tmdb.org/t/p/w500/6oom5QYQ2yQTMJIbnvbkBL9cHo6.jpg", desc: "Perjalanan menghancurkan cincin." },
@@ -74,28 +69,31 @@ const selectMovie = (movie) => {
 </script>
 
 <style scoped>
-
 .home {
-  padding-top: 80px;   
-  padding-bottom: 80px;  
+  padding: 80px 20px;
   background: #0f172a;
   color: white;
-  min-height: 100vh;/*menentukan tinggi minimum sebuah elemen.*/
+  min-height: 100vh;
 }
 
 .header {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 
-.movie-section {
-  padding: 0 2rem;
+.header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(to right, #38bdf8, #818cf8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .movie-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .movie-card {
@@ -103,27 +101,30 @@ const selectMovie = (movie) => {
   border-radius: 16px;
   overflow: hidden;
   cursor: pointer;
-  transition: transform 0.3s;
+  transition: all 0.3s ease;
+  background: #1e293b;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
 
 .movie-card:hover {
-  transform: scale(1.05);
+  transform: translateY(-10px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.5);
 }
 
 .movie-card img {
   width: 100%;
-  height: 270px;
+  height: 300px;
   object-fit: cover;
 }
 
 .overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to top, rgba(15,23,42,0.9), transparent);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 1rem;
+  padding: 1.2rem;
   opacity: 0;
   transition: opacity 0.3s;
 }
@@ -132,22 +133,35 @@ const selectMovie = (movie) => {
   opacity: 1;
 }
 
-
 .modal {
   position: fixed;
   inset: 0;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0,0,0,0.8);
+  backdrop-filter: blur(4px);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .modal-content {
-  background: #020617;
-  padding: 2rem;
-  border-radius: 16px;
+  background: #1e293b;
+  padding: 2.5rem;
+  border-radius: 20px;
   width: 90%;
-  max-width: 400px;
+  max-width: 450px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 10px;
+  border: none;
+  background: #38bdf8;
+  color: #0f172a;
+  font-weight: bold;
+  cursor: pointer;
 }
 </style>
