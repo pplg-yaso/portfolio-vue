@@ -14,7 +14,7 @@
 </template>
 
 <style scoped>
-.footer {
+.Footer {
   background-color: #0f172a;
   color: white;
   padding: 20px 0;
