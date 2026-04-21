@@ -1,11 +1,6 @@
 <template>
   <footer class="footer">
     <p>© {{ year }} MyWebsite. All rights reserved.</p>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Contact</a>
-    </nav>
   </footer>
 </template>
 

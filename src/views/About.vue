@@ -5,10 +5,9 @@
     <div class="card-container">
       <div class="card">
         <img src="https://i.pinimg.com/736x/fb/98/32/fb9832c650cdb9543f9cf77175c8085a.jpg" alt="Strawberry milk cream">
-        <h3>Strawberry milk cream</h3>
-        <p>Cream premium dengan Strawberry di dalamnya</p>
+        <h3>Strawberry cream</h3>
+        <p>Cream premium dengan Strawberry</p>
         <span class="price">Rp 45.000</span>
-        <button>Order Now</button>
       </div>
 
       <div class="card">
@@ -16,7 +15,6 @@
         <h3>Chesecake</h3>
         <p>Perpaduan chese yang lembut</p>
         <span class="price">Rp 40.000</span>
-        <button>Order Now</button>
       </div>
 
       <div class="card">
@@ -24,7 +22,6 @@
         <h3>Cupcakes</h3>
         <p>Cake chocolate dengan cream vanilla</p>
         <span class="price">Rp 35.000</span>
-        <button>Order Now</button>
       </div>
     </div>
   </section>
