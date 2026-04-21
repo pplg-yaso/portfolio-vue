@@ -4,6 +4,9 @@
     <router-view />
   </main>
   <Footer />
+  <section id="contact">
+  <!-- isi contact -->
+</section>
 </template>
 
 <script setup>
@@ -16,7 +19,3 @@ import Footer from './components/Footer.vue'
     padding: 80px 20px;
 }
 </style>
-
-<section id="contact">
-  <!-- isi contact -->
-</section>
