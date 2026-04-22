@@ -1,0 +1,64 @@
+<!-- src/components/PortfolioSection.vue -->
+<template>
+  <section id="portfolio" class="portfolio py-5 px-4">
+    <div class="container">
+      <HeaderText text="Portofolio" data-aos="fade-up" />
+      <ul class="filters d-flex justify-content-center" data-aos="zoom-in">
+        <li v-for="(filter, index) in filters" :key="index" :class="{ 'filter-active': selectedFilter === filter }"
+          @click="setFilter(filter)" class="filter-item">
+          {{ filter }}
+        </li>
+      </ul>
+      <CodeProjects v-if="selectedFilter === 'Code'" />
+      <DesignProjects v-if="selectedFilter === 'Design'" />
+    </div>
+  </section>
+</template>
+
+<script setup lang="ts">
+import { defineAsyncComponent, ref } from 'vue'
+import CodeProjects from './CodeProjects.vue'
+import DesignProjects from './DesignProjects.vue'
+
+const HeaderText = defineAsyncComponent(() => import('../../components/HeaderText.vue'))
+
+// Define filter categories
+const filters = ['Code', 'Design']
+const selectedFilter = ref('Code')
+
+// Update the filter when a category is clicked
+const setFilter = (filter: string) => {
+  selectedFilter.value = filter
+}
+</script>
+
+<style scoped>
+.portfolio .filters {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.portfolio .filter-item {
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 10px 10px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  padding: 20px;
+  text-transform: uppercase;
+  color: #444444;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio .filter-item:hover,
+.portfolio .filter-item.filter-active {
+  color: var(--primary-orange-color);
+}
+
+.portfolio .portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+</style>
