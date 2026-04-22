@@ -1,5 +1,4 @@
 {
-<<<<<<< HEAD
   "name": "my-portofolio",
   "version": "0.0.0",
   "private": true,
@@ -11,59 +10,30 @@
     "test:unit": "vitest",
     "build-only": "vite build",
     "type-check": "vue-tsc --build --force",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix",
+    "lint": "eslint . --ext .vue,.js,.ts --fix",
     "format": "prettier --write src/"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0",
     "@vercel/analytics": "^1.6.1",
-    "@vue/devtools-shared": "^7.7.7",
     "aos": "^2.3.4",
     "axios": "^1.12.2",
     "bootstrap": "^5.3.8",
     "boxicons": "^2.1.4",
     "pinia": "^3.0.3",
-    "vue": "^3.5.22",
+    "vue": "^3.5.32",
     "vue-router": "^4.5.1",
     "vue-sweetalert2": "^5.0.11"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.13.0",
-    "@tsconfig/node20": "^20.1.6",
-    "@types/aos": "^3.0.7",
-    "@types/jsdom": "^27.0.0",
-    "@types/node": "^24.7.2",
-    "@vitejs/plugin-vue": "^6.0.1",
-    "@vue/compiler-sfc": "^3.5.22",
-    "@vue/eslint-config-prettier": "^10.2.0",
-    "@vue/eslint-config-typescript": "^14.6.0",
-    "@vue/test-utils": "^2.4.6",
-    "@vue/tsconfig": "^0.8.1",
+    "@vitejs/plugin-vue": "^6.0.5",
+    "vite": "^8.0.4",
+    "typescript": "~5.9.3",
     "eslint": "^9.37.0",
     "eslint-plugin-vue": "^10.5.0",
-    "jsdom": "^27.0.0",
-    "npm-run-all2": "^8.0.4",
     "prettier": "^3.6.2",
-    "typescript": "~5.9.3",
-    "vite": "^7.1.9",
     "vitest": "^3.2.4",
-    "vue-tsc": "^3.1.1"
-=======
-  "name": "belajar-vue-dasar",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "vue": "^3.5.32"
-  },
-  "devDependencies": {
-    "@vitejs/plugin-vue": "^6.0.5",
-    "vite": "^8.0.4"
->>>>>>> 4458e2c4188a1f353ae456e8daffe301cfe9d807
+    "vue-tsc": "^3.1.1",
+    "npm-run-all2": "^8.0.4"
   }
 }
