@@ -17,3 +17,7 @@
     "vite": "^7.2.4"
   }
 }
+
+"dependencies": {
+  "vue-router": "^4.x.x"
+}
