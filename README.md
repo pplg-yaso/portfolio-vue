@@ -15,4 +15,4 @@ Portfolio website sederhana berbasis Vue.js untuk menampilkan profil, skill, dan
 - HTML & CSS
 - chat GPT
 
-portfolio-vue-git-zaina-zainas-projects-f9783e1d.vercel.app
+https://portfolio-vue-cqlf-git-zaina-zainas-projects-f9783e1d.vercel.app?_vercel_share=GnOOTwFBQpN7FTtK9jnqOX49wC6mAqrW
