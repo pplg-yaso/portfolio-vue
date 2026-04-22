@@ -1,0 +1,28 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+.light {
+  --Background-color: #ffffff;
+  --Secondary-background-color: #e6e8eb;
+  --text-color: #242734;
+  --primary-orange-color: #ffb727;
+  --Light-Grey: #e6e8eb;
+  --grey-color: #82909c;
+  --dark-grey-color: #333;
+}
+
+.dark {
+  --Background-color: #151419;
+  --Secondary-background-color: #1b1b1e;
+  --text-color: #fbfbfb;
+  --primary-orange-color: #f56e0f;
+  --Light-Grey: #e6e8eb;
+  --grey-color: #7f8081;
+  --dark-grey-color: #262626;
+}
+
+main {
+  background-color: var(--Background-color);
+  color: var(--text-color);
+}
