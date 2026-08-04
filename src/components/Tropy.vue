@@ -35,7 +35,7 @@ const trophies = [
     image: 'https://assets.realmadrid.com/is/image/realmadrid/champions?$Mobile$&fit=wrap'
   },
   {
-    name: 'La Liga',
+    name: 'LaLiga',
     count: '36 Titles',
     image: 'https://assets.realmadrid.com/is/image/realmadrid/Liga-1?$Mobile$&fit=wrap'
   },
