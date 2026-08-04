@@ -3,7 +3,7 @@ import Home from '../components/home.vue'
 import About from '../components/about.vue'
 import History from '../components/History.vue'
 import Player from '../components/Player.vue'
-import Trophy from '../components/tropy.vue'
+import Trophy from '../components/Tropy.vue'
 
 const routes = [
   { path: '/', redirect: '/home' },
